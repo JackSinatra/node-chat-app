@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chat</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+</head>
+
+<body>
+  <div> Hello </div>
+
+  <script src="/socket.io/socket.io.js">
+
+  </script>
+  <script>
+  var socket = io()
+    socket.on('connect', ()=>{
+      console.log('Connected to server')
+    })
+    socket.on('disconnect', ()=>{
+      console.log('Disconnected from server')
+    })
+  </script>
+
+</body>
+</html>
